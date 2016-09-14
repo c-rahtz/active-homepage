@@ -7,7 +7,7 @@ var demoBars,
         dataRollOverColor = btn.getAttribute("data-color");
         if (e.type === "mouseover") {
             textColor = dataRollOverColor;
-            shadow = "0px 0px 15px 5px " + dataRollOverColor;
+            // shadow = "0px 0px 15px 5px " + dataRollOverColor;
 
         } else {
             textColor = "#000000";

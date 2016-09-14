@@ -1,6 +1,6 @@
 @import url(reset.css);
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'effra', sans-serif;
     background-color: #222;
     background: url('../img/page-bkgs/cream_dust.png') repeat;
     color: black;
@@ -28,11 +28,15 @@ h1 {
 
 h2 {
     font-size: 1.5em;
+    font-weight: 500;
 }
 
 h3 {
     margin-top: 0.6em;
-    margin-bottom: 0em;
+    margin-bottom: 0.1em;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+    font-weight: 400;
 }
 
 h4 {
@@ -44,8 +48,9 @@ h4 {
 }
 
 h5 {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-bottom: 0.3em;
+    font-weight: 500;
 }
 
 a {
@@ -118,7 +123,7 @@ a:hover {
 }
 
 .two-bar-strip ul {
-    letter-spacing: 0.1em;
+    /*letter-spacing: 0.1em;*/
     border-top: 0.2em solid lightgrey;
     border-bottom: 0.2em solid lightgrey;
     padding: 0.1em 0;
@@ -184,13 +189,51 @@ a:hover {
     height: 4em;
 }
 
-canvas {
-    width: 100%;
-    height: 30em;
+.contact-area {
+    position: relative;
 }
 
-.form-area iframe body {
-    background-color: rgba(255, 255, 255, 0);
+#contact-form {
+    width: 17em;
+    background-color: #525252;
+    padding: 1em;
+    box-sizing: border-box;
+    position: absolute;
+    color: white;
+    -webkit-box-shadow: 0 0.4em 0.4em 1em #555;
+    box-shadow: 0px 0px 15px 5px rgba(187, 187, 187, 0.5);
+    /* centered
+    top: 1em;
+    left: 50%;
+    margin-left: -8.5em;*/
+    right: 0;
+
+}
+
+#contact-form .field label,
+#contact-form .field input,
+#contact-form .field textarea {
+    display: block;
+    width: 80%;
+}
+
+#contact-form .field textarea {
+    width: 95%;
+}
+
+#contact-form .field label {
+    margin: 9px 0 3px 0;
+}
+
+#contact-form .field input {
+    font-size: 1em;
+    padding: 3px;
+}
+
+#contact-form .field button {
+    margin-left: 78%;
+    margin-top: 1em;
+    width: 20%;
 }
 
 @media only screen and (max-width: 580px) {
