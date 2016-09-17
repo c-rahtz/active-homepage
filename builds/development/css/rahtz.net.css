@@ -1,0 +1,249 @@
+body {
+  font-family: 'effra', sans-serif;
+  background-color: #222;
+  background: url("../img/page-bkgs/cream_dust.png") repeat;
+  color: black;
+}
+
+/* retina/high-density display background */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  body {
+    /* background: url('../img/page-bkgs/cream_dust_@2X.png') repeat; */
+  }
+}
+h1 {
+  font-family: 'Courgette', cursive;
+  /* background-color: lightgrey; */
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+h3 {
+  margin-top: 0.6em;
+  margin-bottom: 0.1em;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+h4 {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  font-size: 1.55em;
+  font-family: 'Courgette', cursive;
+  color: #003ec3;
+}
+
+h5 {
+  font-size: 0.9em;
+  margin-bottom: 0.3em;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#stage {
+  margin: 2% auto;
+  width: 80%;
+  max-width: 1010px;
+  /*padding-right: 10%;*/
+}
+
+/*.header-area {
+    position: fixed;
+}
+.spacer {
+    height:145px;
+}*/
+.link-strip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 16%;
+  margin-top: 1.5em;
+}
+
+.link-strip a {
+  text-decoration: none;
+}
+
+.link-strip li {
+  padding-left: 0.2em;
+}
+
+#linkedin-link img,
+#github-link img {
+  width: 26px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.link-strip li:after {
+  content: "|";
+  padding-left: 0.4em;
+}
+
+/*.link-strip li:nth-child(3):after {
+    content: "";
+}*/
+.two-bar-strip {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  /* background-color: #EEEF46; */
+}
+
+.two-bar-strip ul {
+  /*letter-spacing: 0.1em;*/
+  border-top: 0.2em solid lightgrey;
+  border-bottom: 0.2em solid lightgrey;
+  padding: 0.1em 0;
+}
+
+.two-bar-strip li,
+.link-strip li {
+  display: inline-block;
+  margin-right: 0em;
+  cursor: pointer;
+}
+
+.two-bar-strip li:after {
+  content: "  \2022";
+  color: #97B8DA;
+}
+
+.two-bar-strip li:nth-child(4):after {
+  content: "";
+}
+
+#web-group h4 {
+  color: #0471CC;
+}
+
+#interactive-group h4 {
+  color: #ff5240;
+}
+
+#video-group h4 {
+  color: #00A0E0;
+}
+
+#motion-group h4 {
+  color: #FF00AE;
+}
+
+.demo-bar {
+  /* padding: 0; */
+  width: 100%;
+  /* background-color: lightgrey; */
+  margin: 0.7em 0 1.4em 0;
+  -webkit-box-shadow: 0 0.4em 0.4em 1em #555;
+  box-shadow: 0px 0px 15px 5px rgba(187, 187, 187, 0.5);
+  /* box-shadow: 0px 2px 8px 4px #D87878; */
+  cursor: pointer;
+}
+
+.demo-bar img {
+  height: auto;
+  width: 20%;
+  margin: 12px;
+  display: inline-block;
+}
+
+.demo-description {
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+}
+
+.bottom-spacer {
+  height: 4em;
+}
+
+.contact-area {
+  position: relative;
+}
+
+#contact-form {
+  width: 17em;
+  background-color: #525252;
+  padding: 1em;
+  box-sizing: border-box;
+  position: absolute;
+  color: white;
+  -webkit-box-shadow: 0 0.4em 0.4em 1em #555;
+  box-shadow: 0px 0px 15px 5px rgba(187, 187, 187, 0.5);
+  /* centered
+  top: 1em;
+  left: 50%;
+  margin-left: -8.5em;*/
+  right: 0;
+}
+
+#contact-form .field label,
+#contact-form .field input,
+#contact-form .field textarea {
+  display: block;
+  width: 80%;
+}
+
+#contact-form .field textarea {
+  width: 95%;
+}
+
+#contact-form .field label {
+  margin: 9px 0 3px 0;
+}
+
+#contact-form .field input {
+  font-size: 1em;
+  padding: 3px;
+}
+
+#contact-form .field button {
+  margin-left: 78%;
+  margin-top: 1em;
+  width: 20%;
+}
+
+@media only screen and (max-width: 580px) {
+  h1 {
+    line-height: 1em;
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  #stage {
+    padding-right: 0;
+    width: 90%;
+  }
+
+  .two-bar-strip {
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+
+  .link-strip {
+    position: relative;
+    margin-top: 0.5em;
+  }
+}
