@@ -1,6 +1,7 @@
 var demoBars,
     controller,
     scene,
+    
     categoryBtnEvent = function(e) {
 
         var btn, btnGroup, textColor, shadow, dataRollOverColor;

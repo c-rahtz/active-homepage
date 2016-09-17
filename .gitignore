@@ -40,4 +40,5 @@ maps/
 
 # Leaving images out of public repo #
 img/
-builds/**/images/*
+builds/**/img/*
+
