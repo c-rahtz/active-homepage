@@ -33,4 +33,9 @@ gulp.task('compass', function() {
         .pipe(notify({ message: 'Styles task complete' }));
 });
 
-gulp.task('default', ['js', 'compass']);
+gulp.task('watch', function() {
+	gulp.watch(jsSources, ['js']);
+	gulp.watch('components/sass/*.scss', ['compass']);
+});
+
+gulp.task('default', ['js', 'compass', 'watch']);
