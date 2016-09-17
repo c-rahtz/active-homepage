@@ -1,4 +1,5 @@
 @import "compass";
+@import "compass/reset";
 @import "compass/css3/box-shadow";
 body {
     font-family: 'effra', sans-serif;
@@ -21,36 +22,38 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 h1 {
     font-family: 'Courgette', cursive;
-    /* background-color: lightgrey; */
-    line-height: 1.4em;
+    line-height: 1.6em;
     margin: 0;
-    font-size: 2em;
+    font-size: 2.2em;
+    font-weight: 700;
 }
 
 h2 {
     font-size: 1.5em;
     font-weight: 500;
+    margin-bottom: 0.75em;
 }
 
 h3 {
     margin-top: 0.6em;
-    margin-bottom: 0.1em;
+    margin-bottom: 0.3em;
     font-size: 1.25em;
     letter-spacing: 1px;
     font-weight: 400;
 }
 
 h4 {
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
     font-size: 1.55em;
     font-family: 'Courgette', cursive;
     color: rgb(0, 62, 195);
+    font-weight: 700;
 }
 
 h5 {
     font-size: 0.9em;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.5em;
     font-weight: 500;
 }
 
@@ -65,6 +68,10 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
+}
+
+em {
+    font-style: italic;
 }
 
 #stage {

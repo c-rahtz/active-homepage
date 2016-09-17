@@ -2,12 +2,13 @@ var demoBars,
     controller,
     scene,
     categoryBtnEvent = function(e) {
+
         var btn, btnGroup, textColor, shadow, dataRollOverColor;
         btn = e.currentTarget;
         dataRollOverColor = btn.getAttribute("data-color");
         if (e.type === "mouseover") {
             textColor = dataRollOverColor;
-            // shadow = "0px 0px 15px 5px " + dataRollOverColor;
+            shadow = "0px 0px 15px 5px " + dataRollOverColor;
 
         } else {
             textColor = "#000000";
@@ -58,6 +59,7 @@ function addEvents() {
 
 
 function init() {
+    console.log("page init");
     var headerTl, headerAre;
 
     demoBars = document.getElementsByClassName("demo-bar");
