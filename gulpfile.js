@@ -31,8 +31,6 @@ gulp.task('compass', function() {
         .on('error', gutil.log)
         .pipe(gulp.dest('builds/development/css'))
         .pipe(notify({ message: 'Styles task complete' }));
-})
-
-gulp.task('default', function() {
-    gutil.log("here we are.");
 });
+
+gulp.task('default', ['js', 'compass']);
